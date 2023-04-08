@@ -17,7 +17,7 @@ header p {
   display: inline-block;
 }
 .heroImg {
-  background-color: #EBEBEB;
+  /* background-color: #EBEBEB; */
   padding: 100px 15px;
 }
 
@@ -60,7 +60,7 @@ body.about-page {
 }
 
 body.about-page:before {
-  background-image: url(images/Jenn_photo-2.png);
+  background-image: url(../images/Jenn_photo-2.png);
   background-repeat: no-repeat;
   background-position: center 4%;
   background-size: cover;
