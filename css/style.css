@@ -1,14 +1,35 @@
-body {
-  margin: 0;
-}
 
-p {
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Fonts are your friends 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
   color: white;
 }
 
-/* Header Stuff */
+h1 {
+  font-family: 'Ultra';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+p {
+	font-size: 16px;
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Banging my for-header on the keyboard
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
 .header {
-  /* background-color: #373738; **/
   padding: 15px;
 }
 .header ul {
@@ -23,34 +44,30 @@ p {
   display: inline-block;
 }
 
-/* Fonts are your friends */
-.navMenu {
-  font-family: 'Ultra';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-}
 
-/* Page content */
-.heroImg {
-  /* background-color: #EBEBEB; */
-  padding: 100px 15px;
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
-  color: #ffffff;
-}
 
-.content {
-  position: relative;
-  left: -250px;
-  max-width: 40%;
-  margin: 0 auto;
-  padding: 50px;
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Safest place to hide a body
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.content-intro-card {
   text-align: left;
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5%;
 }
+
+.content-intro-box {
+  max-width: 30%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 60%;
+}
+
 button {
   padding: 15px;
   background-color: #373738;
@@ -59,16 +76,20 @@ button {
   border-radius: 4px;
 }
 
-section.about-text {
-  min-height: calc(100vh - 222px);
-  background: #011118;
-  padding: 15px 0px 94px 0;
+.body-container {
+  min-height: calc(100vh - 500px);
+  background-image: linear-gradient(rgba(255,0,0,0), #000000);
+  padding: 150px 50px 94px 50px;
 }
 
 
-/* The code's on the other footer */
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The code's on the other footer 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
 .footer {
-  background-color: #d9149e;
+  background-color: #000000;
   padding: 5px;
   color: white;
 }
@@ -81,7 +102,12 @@ section.about-text {
   padding: 0px 7px;
 }
 
-/* Background experiment improvised/borrowed from urbanriedo.ch */
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Background experiment improvised/borrowed from urbanriedo.ch 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
 body.about-page {
   background-repeat: no-repeat;
   background-position: top center;
