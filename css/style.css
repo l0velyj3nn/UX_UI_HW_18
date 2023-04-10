@@ -80,7 +80,26 @@ You can get with div, or you can get with dat
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+	max-width: 100%;
+}
 
+.card {
+	display: flex;
+	flex-direction: column;
+	margin: 2px;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: rgba(59, 59, 59, 0.13);
+	padding: 24px;
+}
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -272,7 +291,7 @@ button {
 }
 
 .body-container {
-  min-height: calc(100vh - 500px);
+  /* min-height: calc(100vh - 500px); */
   background-image: linear-gradient(rgba(255,0,0,0), #000000);
   padding: 150px 50px 94px 50px;
 }
