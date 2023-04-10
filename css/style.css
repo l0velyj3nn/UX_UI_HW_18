@@ -23,6 +23,11 @@ p {
 	font-size: 16px;
 }
 
+.section-icons h1 {
+	font-size: 100px;
+}
+
+
 /* 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Banging my for-header on the keyboard
@@ -44,6 +49,196 @@ Banging my for-header on the keyboard
   display: inline-block;
 }
 
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+That's the brow beating, heavy, leather, resur-section beat
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.page-section {
+	padding: 92px 0;
+}
+
+.section-header {
+	text-align: center;
+}
+
+.section-header h2 {
+	/* font-size: 32px; */
+	font-size: calc(24px + 5vw);
+	margin-top: 0;
+}
+
+.section-icons {
+  display:block;
+  z-index: 1;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+You can get with div, or you can get with dat
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Let's talk about flex, baby. Let's talk about you and me.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.section-icons {
+  display:block;
+  z-index: 1;
+}
+
+.section-icons .row {
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+  justify-content: space-between;
+}
+
+.section-icons .row .img-block {
+  position: relative;
+  min-height: 70px;
+  min-width: 70px;
+  margin-bottom: calc((100vw - 224px) / 3);
+}
+
+.section-icons .row .img-block img {
+  position: absolute;
+  /* opacity: 0; */
+  width: 100%;
+  max-width: 70px;
+  margin: auto;
+  top: 10%;
+  left: 10%;
+}
+
+.section-icons {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-icons .row {
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+    -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.section-icons .row .img-block {
+  position: relative;
+  min-height: 70px;
+  min-width: 70px;
+  margin-bottom: calc((100vw - 224px) / 3);
+}
+
+.section-icons .row .img-block img {
+  position: absolute;
+  max-width: 70px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 570px) {
+  .section-icons .row {
+    grid-template-columns: 70px 70px 70px 70px;
+  }
+  .section-icons .row .img-block {
+    margin-bottom: calc((100vw - 400px) / 4);
+  }
+}
+
+@media (min-width: 760px) {
+  .section-icons .row {
+    grid-template-columns: 75px 75px 75px 75px 75px;
+  }
+  .section-icons .row .img-block {
+    min-height: 75px;
+    margin-bottom: calc((78vw - 390px) / 5);
+  }
+  .section-icons .row .img-block img {
+    max-width: 75px;
+    max-height: 75px;
+  }
+}
+
+@media (min-width: 980px) {
+  .section-icons .row {
+    grid-template-columns: 80px 80px 80px 80px 80px 80px;
+  }
+  .section-icons .row .img-block {
+    min-height: 80px;
+    margin-bottom: calc((78vw - 480px) / 6);
+  }
+  .section-icons .row .img-block img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .section-icons .row {
+    grid-template-columns: 84px 84px 84px 84px 84px 84px 84px;
+  }
+  .section-icons .row .img-block {
+    min-height: 84px;
+    margin-bottom: calc((85vw - 588px) / 7);
+  }
+  .section-icons .row .img-block img {
+    max-width: 84px;
+    max-height: 84px;
+  }
+}
+
+@media (min-width: 1415px) {
+  .section-icons .row {
+    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px 90px;
+  }
+  .section-icons .row .img-block {
+    min-height: 90px;
+    margin-bottom: calc((85vw - 720px) / 8);
+  }
+  .section-icons .row .img-block img {
+    max-width: 90px;
+    max-height: 90px;
+  }
+}
+
+@media (min-width: 1660px) {
+  .section-icons .row {
+    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px 90px 90px;
+  }
+  .section-icons .row .img-block {
+    margin-bottom: calc((85vw - 810px) / 9);
+  }
+}
+
+@media (min-width: 1860px) {
+  .section-icons .row {
+    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px 90px 90px 90px;
+  }
+  .section-icons .row .img-block {
+    margin-bottom: calc((85vw - 960px) / 10);
+  }
+}
+
+@media (min-width: 2060px) {
+  .section-icons .row {
+    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px 90px 90px 90px 90px;
+  }
+  .section-icons .row .img-block {
+    margin-bottom: calc((85vw - 990px) / 11);
+  }
+}
 
 
 /* 
@@ -113,7 +308,6 @@ body.about-page {
   background-position: top center;
   background-size: cover;
   position: relative; 
-  /* overflow: hidden; */
   background-color: #000;
 }
 
@@ -132,8 +326,8 @@ body.about-page:before {
   left: 0;
   right: 0;
   bottom: 0;
-  animation: fade-in-scale-down 5s ease-out 1;
+  /* animation: fade-in-scale-down 5s ease-out 1;
   -webkit-animation: fade-in-scale-down 5s ease-in-out 1;
   -moz-animation: fade-in-scale-down 5s ease-in-out 1;
-  -o-animation: fade-in-scale-down 5s ease-in-out 1;
+  -o-animation: fade-in-scale-down 5s ease-in-out 1; */
 }
