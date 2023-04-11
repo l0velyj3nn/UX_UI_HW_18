@@ -56,7 +56,7 @@ That's the brow beating, heavy, leather, resur-section beat
 */
 
 .page-section {
-	padding: 92px 0;
+	padding: 20px 0;
 }
 
 .section-header {
@@ -268,7 +268,7 @@ Safest place to hide a body
 
 .content-intro-card {
   text-align: left;
-  background-color: rgba(0,0,0,.5);
+  background-image: linear-gradient(rgba(255,0,0,0), #000000);
   color: white;
   padding: 10px;
   border-radius: 5%;
