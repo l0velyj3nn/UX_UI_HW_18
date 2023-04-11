@@ -288,6 +288,7 @@ button {
   color: white;
   font-size: 15px;
   border-radius: 4px;
+  max-width: 40%;
 }
 
 .body-container {
